@@ -3,7 +3,7 @@ using namespace std;
 #include<set>
 #include<vector>
 bool containsDuplicate(vector<int>& nums) {
-    set<int> st;
+    unordered_set<int> st;
     for(int num: nums){
         if(st.find(num) != st.end()){ // found duplicate
             return true;
