@@ -12,7 +12,7 @@ vector<int> findDisappearedNumbers(vector<int>& nums) {
     }
     for(int i=0; i<n; i++){
         if(nums[i] > 0){ // not found (unmarked)
-            ans.push_back(i);
+            ans.push_back(i+1);
         }
     }
     return ans;
